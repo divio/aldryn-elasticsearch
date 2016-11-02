@@ -19,9 +19,6 @@ class Form(forms.BaseForm):
         if env('DJANGO_MODE') == 'build':
             return settings
 
-        if not settings['DEFAULT_ELASTICSEARCH_URL']:
-            return settings
-
         settings['ALDRYN_ELASTICSEARCH_DEBUG'] = boolean_ish(
             env('ALDRYN_ELASTICSEARCH_DEBUG', False))
 

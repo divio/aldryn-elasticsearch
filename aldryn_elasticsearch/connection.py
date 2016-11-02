@@ -8,7 +8,11 @@ from . import elasticsearch_url
 
 def get_connection(url=None, suffix='default'):
     if url is None:
-        url = settings.DEFAULT_ELASTICSEARCH_URL
+        url = getattr(settings, 'DEFAULT_ELASTICSEARCH_URL', None)
+
+    if not url:
+        return None, None
+
     conn_info = elasticsearch_url.parse(url, suffix)
     return connections.create_connection(**conn_info), conn_info['INDEX']
 
