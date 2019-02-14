@@ -1,16 +1,26 @@
-####################
-Aldryn Elasticsearch
-####################
+=================
+Aldryn Elasticsearch App
+=================
 
 Small addon which helps configure the Elastic Search connection
 using environment variables. Meant to be used as an Aldryn Addon together with aldryn-django.
 
-
-============
 Installation
 ============
 
 **Aldryn Platform Users** ask support to provision ElasticSeearch for you.
+
+Contributing
+============
+
+This is a an open-source project. We'll be delighted to receive your
+feedback in the form of issues and pull requests. Before submitting your
+pull request, please review our `contribution guidelines
+<http://docs.django-cms.org/en/latest/contributing/index.html>`_.
+
+We're grateful to all contributors who have helped create and maintain this package.
+Contributors are listed at the `contributors <https://github.com/divio/aldryn-elasticsearch/graphs/contributors>`_
+section.
 
 Local docker setup
 ==================
@@ -32,7 +42,6 @@ aldryn setup: add to ``.env-local``)::
     DEFAULT_ELASTICSEARCH_URL=es+http://es:9200/local-*
 
 
-=====
 Usage
 =====
 
@@ -59,12 +68,10 @@ If you want to use a different host URL than the default
     es_conn.search(index=es_index)
 
 
-===========
 Other Stuff
 ===========
 
 ``DEFAULT_ELASTICSEARCH_URL`` environment variable
-=============================================
 
 Set an environment variable::
 
@@ -76,7 +83,6 @@ There is also native support for AWS ElasticSearch style connections::
 
 There is also support to define the index name with a wildcard ``*`` that can
 be used for setting up multiple indeces.
-
 
 Debugging
 =========
