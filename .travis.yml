@@ -10,9 +10,7 @@ matrix:
       env: TOX_ENV='isort'
 
 install:
-  - pip install coverage isort tox
-  - "if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then export PY_VER=py35; fi"
-  - "if [[ ${DJANGO}z != 'z' ]]; then export TOX_ENV=$PY_VER-$DJANGO-$CMS; fi"
+  - pip install coverage tox
 
 script:
   - tox -e $TOX_ENV
