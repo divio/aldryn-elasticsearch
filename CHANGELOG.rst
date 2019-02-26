@@ -2,6 +2,12 @@ CHANGELOG
 =========
 
 
+0.1.2 (unreleased)
+==================
+
+* Adapted code base to align with other supported addons
+
+
 0.1.1 (2016-11-02)
 ==================
 
