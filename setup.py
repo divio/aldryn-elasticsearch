@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 
 REQUIREMENTS = [
-    'aldryn-django>=1.11.20.1',
+    'aldryn-django',
     'elasticsearch',
     'elasticsearch-dsl',
     'requests-aws4auth',
