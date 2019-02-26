@@ -1,6 +1,6 @@
-=================
-Aldryn Elasticsearch App
-=================
+====================
+Aldryn Elasticsearch
+====================
 
 Small addon which helps configure the Elastic Search connection
 using environment variables. Meant to be used as an Aldryn Addon together with aldryn-django.
