@@ -16,4 +16,5 @@ def get_connection(url=None, suffix='default'):
     conn_info = elasticsearch_url.parse(url, suffix)
     return connections.create_connection(**conn_info), conn_info['INDEX']
 
+
 es_conn, es_index = get_connection()
